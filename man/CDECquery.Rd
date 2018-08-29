@@ -13,20 +13,16 @@ CDECquery(id, sensor, interval = "D", start, end)
 
 \item{interval}{The code of the data duration you want: "D" for daily (default), "E" for event, or "M" monthly.}
 
-\item{start}{The start date of the data, in mm/dd/yyyy format}
+\item{start}{The start date of the data, in yyyy-mm-dd format}
 
-\item{end}{The end date of the data you want, in mm/dd/yyyy format}
+\item{end}{The end date of the data you want, in yyyy-mm-dd format}
 }
 \value{
 The data between the specified \code{start_date} and \code{end_date}, in table format
 }
 \description{
-CDECquery function, recreated from the sharpshootR package (function author: Dylan Beaudette)
+CDECquery function, edited from the sharpshootR package (original function author: Dylan Beaudette)
 }
 \details{
-For original documentation, see ?sharpshootR::CDECquery.  Dates must be in yyyy-mm-dd format, type of data and station is quoted, sensor number is numeric.
-}
-\examples{
-d <- CDECquery("FPT", 20, "E", "03/01/2011", "05/01/2011")
-head(d)
+For original documentation, see ?sharpshootR::CDECquery.  For argument inputs, start and end dates must be in yyyy-mm-dd format, duration code and station id are quoted, sensor number is numeric.
 }
